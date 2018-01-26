@@ -24,7 +24,7 @@ Once you've generated the lexer and/or parser code, you need to download or buil
 
 * http://www.antlr.org
 
-Use CMake to build a Linux library (works also on OSX, however not for the iOS library).
+Use CMake to build a Linux library (works also on OSX, however not for the iOS library). On Linux, the runtime requires `libuuid` library to build, which is provided by `uuid-dev` package on Ubuntu; look for similar packages for other Linux distributions.
 
 Instead of downloading a prebuilt binary you can also easily build your own library on OSX or Windows. Just use the provided projects for XCode or Visual Studio and build it. Should work out of the box without any additional dependency.
 

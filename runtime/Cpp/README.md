@@ -41,6 +41,8 @@ Include the antlr4-runtime.h umbrella header in your target application to get e
 
 If you are compiling with cmake, the minimum version required is cmake 2.8.
 
+If yoy are compiling with GCC, the minimum version is g++ 5.0.
+
 #### Compiling on Windows
 Simply open the VS solution (VS 2013+) and build it.
 
@@ -48,6 +50,8 @@ Simply open the VS solution (VS 2013+) and build it.
 Either open the included XCode project and build that or use the cmake compilation as described for linux.
 
 #### Compiling on Linux
+For Linux, you need to have `libuuid` installed.
+
 - cd <antlr4-dir>/runtime/Cpp (this is where this readme is located)
 - mkdir build && mkdir run && cd build
 - cmake .. -DANTLR_JAR_LOCATION=full/path/to/antlr4-4.5.4-SNAPSHOT.jar -DWITH_DEMO=True
